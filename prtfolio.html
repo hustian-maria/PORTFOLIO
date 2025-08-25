@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="prtfolio.css">
+</head>
+<body>
+    <section class="sect">
+        <header>
+            <h1>my <strong>portfolio</strong></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#"  onclick="scrollToSection('tion')">about</a></li>
+                    <li><a href="#" onclick="scrollToSection('three')">services</a></li>
+                    <li><a href="#" onclick="scrollToSection('conclude')">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="content">
+            <img src="image.JPG" alt="">
+            <h2>WIRSIY MARIE HUSTIAN NYUYDZE</h2>
+            <p>Web Developer and Designer</p>
+        </div>
+        <h5>--scroll down--</h5>
+    </section>
+    
+    <section id="tion">
+        
+        <div class="image">
+            <img src="image.JPG" alt="">
+        </div>
+        <div class="par">
+            <h3>about me</h3>
+            
+            <p>
+                My name is Wirsiy Marie Hustian. And i'm a very passionate frontend web developer. I have always been fascinated by the relationship between technology and Design.My primary focus is on frontend web development wich has permitted me to realize amazing interfaces for users. I am profficient in HTML, CSS, JAVASCRIPT, REACT JS and NEXT JS. I am well-versed with responsive web design ensuring that the websites adapt perfectly to all screen sizes
+            </p>
+        
+            <button class="butt">html5</button>
+            <button class="butt">Next js</button>
+            <button class="butt">css</button>
+            <button class="butt">javascript</button>
+            <button class="butt">react js</button><br>
+            <button class="cv">Download CV</button>
+        </div>
+    </section>
+    <section id="three">
+        <h3>services</h3>
+        <h5>What i do</h5>
+        <div class="services">
+            <div class="four">
+                <h3>user interface</h3>
+                <p>i am very efficient when it comes to designing i offer great design product which always satisfy my clients </p>
+            
+            </div>
+            <div class="five">
+            <h3>branding</h3>
+            <p>i am very efficient when it comes to designing i offer great design product which always satisfy my clients </p>
+        
+            </div>
+            <div class="six">
+            <h3>creative design</h3>
+            <p>i am very efficient when it comes to designing i offer great design product which always satisfy my clients </p>
+    
+            </div>
+        </div>
+           
+            
+    </section>
+
+    <div id="conclude">
+        <h4 class="next">''let's work together on your next project''</h4>
+        <p class="now">Collaboration is key. Let's join forces and combine our skills to work on your next project with a powerful energy that guarantees success</p>
+        <button class="contact">Contact</button>
+
+    </div>
+    <script>
+        function scrollToSection(id) {
+            const element =document.getElementById(id);
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
