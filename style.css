@@ -184,7 +184,7 @@ h3 {
     color:rgb(32, 235, 32) ;
     background-color: transparent;
     box-shadow: 0 0 10px rgb(32, 235, 32);
-    float: inline-end;
+    /* float: inline-end; */
     margin-top: 50px;
 }
 .cv:hover {
@@ -330,12 +330,37 @@ h5 {
     cursor: pointer;
     margin-bottom: 1rem;
     align-self: center;
-    background-color: #000502 opacity:;
+    background-color: #000502 opacity;
 }
 .foot-link a:hover {
     text-shadow: 0 0 20px rgb(5, 250, 17);
 }
+#section2 {
+    width: 90;
+}
+.skill-only {
+    padding-right: 2rem;
+}
+.contact-only {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-link{
+    margin: 0;
+    background-color:rgb(56, 56, 56);
+    width: 100%;
+    padding: 1rem .5rem;
+    display: flex;
+    justify-content: space-between;
 
+}
+.footer-link img {
+    width: 25px;
+}
 @media screen and (max-width:700px){
     .sect::before {
         content: '';

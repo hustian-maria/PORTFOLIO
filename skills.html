@@ -24,13 +24,13 @@
         }
     </style>
 </head>
-<body>
+<body class="skill-only">
     <header>
         <h1>My<strong>Portfolio</strong></h1>
         <nav>
             <ul>
                 <li><a href="#">skills</a></li>
-                <li><a href="#">projects</a></li>
+                <li><a href="#"  onclick="scrollToSection('section2')">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -80,9 +80,9 @@
     <h5>Adobe illustrator : 30%</h5>
    </div>
     </section>
-    <h3>Projects</h3>
-    <section class="section2">
-        
+    
+    <section id="section2">
+        <h3>Projects</h3>
         <p>You can view some of my projects and see how amzing ideas couldbe  visual appealing. Let's connect and work together on your project. you can follow me on gitub for more updates</p>
         <div class="project-description">
             <img src="3column.jpg" alt="">
@@ -118,6 +118,12 @@
         </div>
     </section>
     <footer class="foot-link">hustian maria  © 2025 | <a href="https://github.com/hustian-maria">GI THUB</a> </footer>
+     <script>
+        function scrollToSection(id) {
+            const element =document.getElementById(id);
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
     
   
 </body>
