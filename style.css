@@ -4,6 +4,7 @@
 body {
     background-color: rgb(3, 14, 1);
     background: linear-gradient(to right, #000502, #0b3510);
+    color: white;
 }
 *,
 *::before
@@ -312,9 +313,9 @@ h5 {
     flex-direction: column;
     padding: 1rem;
     width:350px;
-    align-items: center;
+    align-self: center;
     text-align: center;
-    justify-content: center;
+    justify-self: center;
     box-shadow: 0 0 20px rgb(5, 250, 17) ;
     margin-bottom: 3rem;
     border-radius: 20px;
@@ -323,6 +324,16 @@ h5 {
     border-radius: 10px;
     height: 40%;
     width: 100%;
+}
+.foot-link {
+    opacity: 1.5;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    align-self: center;
+    background-color: #000502 opacity:;
+}
+.foot-link a:hover {
+    text-shadow: 0 0 20px rgb(5, 250, 17);
 }
 
 @media screen and (max-width:700px){
