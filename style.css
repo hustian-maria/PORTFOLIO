@@ -12,12 +12,17 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family:"fraunces" ;
+    src: url(Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf);
+}
 html {
     scroll-behavior: smooth;
 }
 body {
     /*background-color: black;*/
-    font-family: 'open sans', sans-serif;
+    font-family: "fraunces", sans-serif;
+    padding-left: 1.5rem;
 }
 ul {
     list-style: none;
@@ -62,6 +67,7 @@ header ul{
     display: flex;
     gap: 40px;
     align-items: center;
+    width: 70%;
 }
 header ul li>a {
     color:rgb(5, 250, 17);
@@ -89,6 +95,7 @@ header nav ul li:first-of-type {
     color: rgb(5, 250, 17);
     font-size: 25px;
     margin-bottom: 0;
+    text-shadow: 0 0 20px rgb(5, 250, 17);
 }
 .content img {
     height: 38vh;
@@ -132,7 +139,8 @@ h3 {
 }
 .butt:hover {
     cursor: pointer;
-    background-color:rgb(115, 226, 121); ;
+    opacity: 0.5;
+    color: white;
 }
 /* .image {
     width: 60%;
@@ -155,15 +163,21 @@ h3 {
     margin-left:20px ;
     margin-top:20px ;
     box-shadow: 0 0 25px rgb(32, 235, 32);
-    width: 45%;
+    width: 250px;
 }
-button {
+.butt {
     background-color: rgb(32, 235, 32);
     padding: 5px 14px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
     border-radius: 6px;
     border: none;
     margin-top: 25px;
     margin-right: 15px;
+    max-width: 250px;
+    align-self: self-end;
 }
 .cv {
     color:rgb(32, 235, 32) ;
@@ -228,15 +242,9 @@ h5 {
 }
 .now {
     color: white;
+    margin: 0;
 }
 
-.roboto-uniquifier {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "width" 100;
-  }
 #conclude {
     width: 40%px;
     border-style: dotted;
@@ -257,6 +265,48 @@ h5 {
 .contact:hover {
     background-color:rgb(145, 240, 145) ;
 }
+/* for skills.html */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    max-width: 500px;
+    
+}
+.skill1 .fill {
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 10px;
+}
+.skill2 .fill {
+    height: 20px;
+    background-color: #afa54c;
+    border-radius: 10px;
+}
+.skill3 .fill {
+    height: 20px;
+    background-color: #5b4caf;
+    border-radius: 10px;
+}
+.skill4 .fill {
+    height: 20px;
+    background-color: #af4c4c;
+    border-radius: 10px;
+}
+.skill5 .fill {
+    height: 20px;
+    background-color: #af4ca2;
+    border-radius: 10px;
+    
+}
+.skill6 .fill {
+    height: 20px;
+    background-color: #4c98af;
+    border-radius: 10px;
+    
+}
+
 
 @media screen and (max-width:700px){
     .sect::before {
