@@ -307,6 +307,23 @@ h5 {
     
 }
 
+.project-description {
+    display:flex;
+    flex-direction: column;
+    padding: 1rem;
+    width:350px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgb(5, 250, 17) ;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+}
+.project-description img {
+    border-radius: 10px;
+    height: 40%;
+    width: 100%;
+}
 
 @media screen and (max-width:700px){
     .sect::before {
